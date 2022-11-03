@@ -37,3 +37,41 @@ body {
     padding: 0% 20% 0% 5%;
     margin: 0%;
 }
+
+#form {
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+    padding: 3% 25% 5% 5%;
+}
+
+#form p {
+    font-size: 1.5em;
+}
+
+#form-elements {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8%;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.75em;
+}
+
+input {
+    border: solid 0.5px;
+    border-radius: 3px;
+}
+
+input:focus {
+    border: 0px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+}
+
+input:invalid {
+    border: solid 0.5px rgb(120, 0, 0);
+}
