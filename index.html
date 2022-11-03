@@ -1,46 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin's Sign-Up Form</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div id="banner">
         <h1>ODIN</h1>
     </div>
     <div id="content">
-        <p id="catchphrase">
-            This is not a real online service! You know you need something
-            like this in your life to help you realize your deepest dreams.
-            <br>
-            Sign up now to get started.
-            <br>
-            <br>
-            You know you want to.
-        </p>
+        <div id="top">
+            <p id="catchphrase">
+                This is not a real online service! You know you need something
+                like this in your life to help you realize your deepest dreams.
+                <br>
+                Sign up <em>now</em> to get started.
+                <br>
+                <br>
+                You <em>know</em> you want to.
+            </p>
+        </div>
 
-        <form action="">
-            <div id="form">
-                <label for="firstname">FIRST NAME</label>
-                <input type="text" name="firstname" id="firstname">
-                <label for="lastname">LAST NAME</label>
-                <input type="text" name="lastname" id="lastname">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email">
-                <label for="phonenumber">PHONE NUMBER</label>
-                <input type="tel" name="phonenumber" id="phonenumber">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="password" id="password">
-                <label for="confirmpass">CONFIRM PASSWORD</label>
-                <input type="password" name="confirmpass" id="confirmpass">
-            </div>
+        <div id="middle">
+            <form action="">
+                <div id="form">
+                    <p>Let's do this!</p>
+                    <div id="form-elements">
+                        <div class="form-element">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" name="firstname" id="firstname">
+                        </div>
+                        <div class="form-element">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" name="lastname" id="lastname">
+                        </div>
+                        <div class="form-element">
+                            <label for="email">EMAIL</label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="form-element">
+                            <label for="phonenumber">PHONE NUMBER</label>
+                            <input type="tel" name="phonenumber" id="phonenumber">
+                        </div>
+                        <div class="form-element">
+                            <label for="password">PASSWORD</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="form-element">
+                            <label for="confirmpass">CONFIRM PASSWORD</label>
+                            <input type="password" name="confirmpass" id="confirmpass">
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <div id="bottom">
             <button type="submit" id="createaccount">Create Account</button>
-        </form>
+            </form>
 
-        
-        <p>Already have an account? <a href="" id="login">Log in</a> </p>
+            <p>Already have an account? <a href="" id="login">Log in</a> </p>
+        </div>
     </div>
 </body>
+
 </html>
