@@ -88,7 +88,7 @@ input:focus {
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 
-input:invalid:not(:empty) {
+.wrong {
     border: solid 0.5px rgb(120, 0, 0);
 }
 
