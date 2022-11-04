@@ -10,13 +10,13 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40vw;
+    width: 35vw;
     background-image: url(./img/background.jpeg);
     background-size: cover;
 }
 
 #banner h1 {
-    margin-top: 28vh;
+    margin-top: 34%;
     padding: 5% 0% 5% 0%;
     width: inherit;
     text-align: center;
@@ -26,7 +26,7 @@ body {
 }
 
 #content {
-    width: 60vw;
+    width: 65vw;
     display: flex;
     flex-direction: column;
     color: #333333;
@@ -34,7 +34,7 @@ body {
 
 #top {
     font-size: 1.5em;
-    padding: 0% 20% 0% 5%;
+    padding: 10% 20% 0% 5%;
     margin: 0%;
 }
 
@@ -43,19 +43,35 @@ body {
     padding: 3% 25% 5% 5%;
 }
 
-#form p {
+#form p:not(.error) {
     font-size: 1.5em;
+    margin-top: 0px;
+}
+
+.error {
+    color:rgb(120, 0, 0);
+    font-size: 0.75em;
+    margin: 0px;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.non-visible {
+    visibility: hidden;
 }
 
 #form-elements {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 8%;
+    gap: 0% 8%;
 }
 
 .form-element {
     display: flex;
     flex-direction: column;
+    margin-top: 8%;
 }
 
 label {
@@ -63,16 +79,16 @@ label {
 }
 
 input {
-    border: solid 0.5px;
+    border: solid 0.5px #E5E7EB;
     border-radius: 3px;
 }
 
 input:focus {
-    border: 0px;
+    border: solid 0.5px rgb(42, 68, 42);
     box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
 }
 
-input:invalid {
+input:invalid:not(:empty) {
     border: solid 0.5px rgb(120, 0, 0);
 }
 
